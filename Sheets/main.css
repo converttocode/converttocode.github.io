@@ -445,6 +445,9 @@
     	background-repeat:no-repeat;
 
 	}
+	#logocontainer img {
+		width:45%;
+	}
 
 	@media (max-width: 700px) {
 
@@ -462,14 +465,24 @@
 
   		width: 150px;
   		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  		display: block;
-  		text-align: center;
+  		display: inline-block;
   		margin: 0 auto;
   		margin-bottom: 10px;
   		clear: both;
   		position: relative;
 	}
+	div.polaroid-container {
+		text-align: center;
+		min-height: 100%;
+		margin: 0 auto;
+	}
 	#mail-top {
 		margin-top: 10px;
+	}
+	#mailto {
+		font-size: 23px;
+	}
+	#logocontainer img {
+		width: 75%;
 	}
 }
