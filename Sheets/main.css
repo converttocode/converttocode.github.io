@@ -472,8 +472,6 @@
   		position: relative;
 	}
 	div.polaroid-container {
-		text-align: center;
-		min-height: 100%;
 		margin: 0 auto;
 	}
 	#mail-top {
