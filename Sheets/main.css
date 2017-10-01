@@ -508,6 +508,7 @@
 	#logocontainer img {
 		width:45%;
 	}
+	
 	@media (max-width: 700px) {
 
 	.flex {
@@ -520,13 +521,23 @@
 
 		margin: 10px auto 10px auto;
 	}
+
 	#mail-top {
 		margin-top: 10px;
 	}
+
 	#mailto {
 		font-size: 20px;
 	}
+
 	#logocontainer img {
 		width: 55%;
 	}
+
+	.content-boxes {
+		margin: 0px 0px 10px 0px;
+		width: 100%;
+		float: none;
+	}
+
 }
