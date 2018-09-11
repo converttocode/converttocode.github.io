@@ -5,66 +5,49 @@ $(document).ready(function(){
 	$.fn.ScrollView = function() {
 		return this.each(function() {
 			$("html, body").animate({
-				scrollTop: $( this ).offset().top
+				scrollTop: $( this ).offset().top - 140
 			}, 1000);
 		});
 	}
 
 	$(window).scroll(function() {
-			console.log($(window).scrollTop());
-
-			if ($(window).scrollTop() > 400) {
-
-				$( "#scrollupbutton" ).slideDown('slow');
-
-			}
-
-			else if($(window).scrollTop() < 100) {
-
-				$( "scrollupbutton" ).hide();
-
-			}
-
-			else {
-
-				$( "#scrollupbutton" ).hide();
-
-			}
-
+		if ($(window).scrollTop() > 400) {
+			$( "#scrollupbutton" ).slideDown('slow');
+		}
+		else if($(window).scrollTop() < 100) {
+			$( "scrollupbutton" ).hide();
+		}
+		else {
+			$( "#scrollupbutton" ).hide();
+		}
 	});
 
 	//Auto Scroll Buttons
 
-	$( "#aboutbutton" ).click(function() {
-
+	$( ".aboutbutton" ).click(function() {
 		$( "#about" ).ScrollView();
-
 	});
 
-		$( "#eventsbutton" ).click(function() {
-
-		$( "#events" ).ScrollView();
-
+	$( ".eventsbutton" ).click(function() {
+		$( "#upcoming" ).ScrollView();
 	});
 
-	$( "#sponsorsbutton" ).click(function() {
-
+	$( ".sponsorsbutton" ).click(function() {
 		$( "#sponsors" ).ScrollView();
-
 	});
 
-	$( "#gallerybutton" ).click(function() {
+	$( ".pressbutton" ).click(function() {
+		$( "#press" ).ScrollView();
+	});
 
-		$( "#gallery" ).ScrollView();
-
+	$( ".contactbutton" ).click(function() {
+		$( "#contact" ).ScrollView();
 	});
 
 	//Scroll up Button
 
 	$( "#scrollupbutton" ).click(function() {
-
 		$( "#header" ).ScrollView();
-
 	});
 
 
